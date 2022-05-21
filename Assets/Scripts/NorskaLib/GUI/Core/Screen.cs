@@ -23,12 +23,9 @@ namespace NorskaLib.GUI
 
             set
             {
-                if (order != value)
-                {
-                    GUIManager.UpdateScreensOrder();
-                    name = $"{this.GetType().Name} (Layer: {value})";
-                }
+                name = $"{this.GetType().Name} (Layer: {value})";
                 order = value;
+                GUIManager.UpdateScreensOrder();
             }
         }
 
