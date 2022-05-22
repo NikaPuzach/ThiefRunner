@@ -1,16 +1,18 @@
 ﻿<Properties StartupConfiguration="{E9603182-87AC-30CB-560C-1F1DC5384AED}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/NPCAI.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/SceneController.cs">
     <Files>
-      <File FileName="Assets/Scripts/SceneController.cs" Line="204" Column="1" />
-      <File FileName="Assets/Scripts/GrabbableItemManager.cs" Line="16" Column="1" />
-      <File FileName="Assets/Scripts/Grabber.cs" Line="21" Column="34" />
-      <File FileName="Assets/Scripts/HelicopterMovementController.cs" Line="24" Column="67" />
+      <File FileName="Assets/Scripts/SceneController.cs" Line="59" Column="20" />
+      <File FileName="Assets/Scripts/GrabbableItemManager.cs" />
+      <File FileName="Assets/Scripts/Grabber.cs" />
+      <File FileName="Assets/Scripts/HelicopterMovementController.cs" Line="25" Column="46" />
       <File FileName="Assets/Scripts/NPCAI.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Unit/Unit.cs" Line="24" Column="43" />
+      <File FileName="Assets/Scripts/Unit/UnitEvents.cs" Line="8" Column="40" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="39effaa7-cf66-45c0-92c7-f608d0fdc999" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="856cf93a-6e4d-472c-b666-2428b7480512" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

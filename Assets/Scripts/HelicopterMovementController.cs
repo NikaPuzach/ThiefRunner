@@ -18,10 +18,10 @@ public class HelicopterMovementController : MonoBehaviour
     {
         MovePropeller();
         transform.DORotate(Vector3.zero, 1);
-        transform.DOLocalMove(new Vector3
+        transform.DOMove(new Vector3
             (transform.position.x,
             transform.position.y + 1,
-            transform.position.z + GrabbableItemManager.fuelAmount),
+            transform.position.z + GrabbableItemManager.fuelAmount * 3),
             GrabbableItemManager.fuelAmount);
     }
 
