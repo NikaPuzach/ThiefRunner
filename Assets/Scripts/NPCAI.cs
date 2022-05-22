@@ -12,9 +12,6 @@ public class NPCAI : MonoBehaviour
 {
     [SerializeField] Unit unit;
     [SerializeField] float stopDistance;
-    [SerializeField] RectTransform canvas;
-    [SerializeField] TextMeshProUGUI text;
-    [SerializeField] GrabbableMoney money;
 
     World World => World.Instance;
 
@@ -23,11 +20,6 @@ public class NPCAI : MonoBehaviour
 
     Vector3 position;
     bool hasArrived;
-
-    private void Start()
-    {
-        canvas.localScale = Vector3.zero;
-    }
 
     private void Update()
     {
@@ -67,8 +59,6 @@ public class NPCAI : MonoBehaviour
         {
             var npc = this.GetComponent<Unit>();
             npc.AnimationController.AnimateAnger();
-
-            StartCoroutine(ShowGoldAmountRoutine());
         }
     }
 
@@ -76,19 +66,5 @@ public class NPCAI : MonoBehaviour
     {
         Gizmos.color = Color.green;
         Gizmos.DrawLine(transform.position, position);
-    }
-
-    IEnumerator ShowGoldAmountRoutine()
-    {
-        text.SetText(money.BucksAmount.ToString());
-
-        canvas.transform.rotation = Quaternion.Euler(Vector3.zero);
-
-        canvas.DOScale(1, 0.5f);
-        canvas.DOLocalMove(new Vector3(0, 3, 0), 0.5f);
-
-        yield return new WaitForSeconds(3);
-
-        Destroy(canvas.gameObject);
     }
 }
