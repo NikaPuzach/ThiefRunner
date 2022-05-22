@@ -134,6 +134,8 @@ namespace NorskaLib.GUI
                 rect.offsetMin = Vector2.zero;
                 rect.offsetMax = Vector2.zero;
                 rect.localScale = Vector3.one;
+                rect.localPosition = Vector3.zero;
+                rect.localRotation = Quaternion.identity;
 
                 children[name] = rect;
             }
