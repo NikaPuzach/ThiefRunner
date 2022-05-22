@@ -21,7 +21,7 @@ public class HelicopterMovementController : MonoBehaviour
         transform.DOLocalMove(new Vector3
             (transform.position.x,
             transform.position.y + 1,
-            transform.position.z + GrabbableItemManager.fuelAmount * 3),
+            transform.position.z + GrabbableItemManager.fuelAmount),
             GrabbableItemManager.fuelAmount);
     }
 

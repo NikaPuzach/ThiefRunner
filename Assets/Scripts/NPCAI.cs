@@ -82,7 +82,7 @@ public class NPCAI : MonoBehaviour
     {
         text.SetText(money.BucksAmount.ToString());
 
-        canvas.DORotate(Vector3.zero, 0);
+        canvas.transform.rotation = Quaternion.Euler(Vector3.zero);
 
         canvas.DOScale(1, 0.5f);
         canvas.DOLocalMove(new Vector3(0, 3, 0), 0.5f);
