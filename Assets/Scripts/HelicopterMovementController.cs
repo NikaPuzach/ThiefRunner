@@ -66,10 +66,12 @@ public class HelicopterMovementController : MonoBehaviour
         var duration = Mathf.Lerp(flightDurationMin, flightDurationMax, lerpFactor) * platformsCount;
 
         transform.DORotate(new Vector3(15, 0, 0), finishDuration);
-        transform.DOMove(targetPlatform.HelicopterTargetPont.position, duration);//.SetEase(flightEase);
+        transform.DOMove(targetPlatform.HelicopterTargetPont.position, duration);
 
         yield return new WaitForSeconds(duration);
 
         transform.DORotate(new Vector3(0, 90, 0), finishDuration);
+
+        UnitEvents.OnHelicopterReachedEndPoint?.Invoke();
     }
 }

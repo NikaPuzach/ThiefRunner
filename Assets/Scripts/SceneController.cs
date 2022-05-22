@@ -51,6 +51,7 @@ public class SceneController : MonoBehaviour
         UnitEvents.OnScooterLoose += OnScooterLose;
         UnitEvents.OnHelicopterEndFinish += OnHelicopterEndFinish;
         UnitEvents.OnUnitEnterHelicopter += OnUnitEnterHelicopter;
+        UnitEvents.OnHelicopterReachedEndPoint += OnHelicopterReachedEndPoint;
         phase = GamePhases.Initial;
     }
 
@@ -64,6 +65,12 @@ public class SceneController : MonoBehaviour
         UnitEvents.OnScooterLoose -= OnScooterLose;
         UnitEvents.OnUnitEnterHelicopter -= OnUnitEnterHelicopter;
         UnitEvents.OnHelicopterEndFinish -= OnHelicopterEndFinish;
+        UnitEvents.OnHelicopterReachedEndPoint -= OnHelicopterReachedEndPoint;
+    }
+
+    private void OnHelicopterReachedEndPoint()
+    {
+        ScreenManager.ShowScreen<WinScreen>();
     }
 
     private void OnUnitEnterHelicopter(Unit unit, HelicopterMovementController helicopter)
@@ -88,7 +95,6 @@ public class SceneController : MonoBehaviour
         UserDataManager.Money += GrabbableItemManager.money - money;
 
         Phase = GamePhases.Finish;
-        //Show WinScreen - ScreenManager.ShowScreen<>
     }
 
     private void OnScooter(Unit unit, Scooter scooter)

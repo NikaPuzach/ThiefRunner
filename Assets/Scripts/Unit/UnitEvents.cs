@@ -15,4 +15,5 @@ public static class UnitEvents
     public static Action<Unit, HelicopterMovementController> OnUnitEnterHelicopter;
     public static Action<GrabbableFuel> OnUnitGrabFuel;
     public static Action<GrabbableFuel> OnFuelsErupt;
+    public static Action OnHelicopterReachedEndPoint;
 }

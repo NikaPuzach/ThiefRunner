@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 8505931874517211477}
   - component: {fileID: 4730178653504820976}
   - component: {fileID: 7367905644455305786}
-  - component: {fileID: 8178988291198566076}
   - component: {fileID: 8178988291198566074}
   - component: {fileID: 8178988291198566075}
+  - component: {fileID: 7451117056428249141}
   m_Layer: 7
   m_Name: Puddle
   m_TagString: Untagged
@@ -84,19 +84,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8178988291198566076
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9025481202382210031}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.040467165, y: 0.034637354, z: 0.0061959955}
-  m_Center: {x: -0.0029685234, y: -0.0034497129, z: 0.0023979987}
 --- !u!114 &8178988291198566074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,3 +112,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!135 &7451117056428249141
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9025481202382210031}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.017929666
+  m_Center: {x: -0.002968521, y: -0.0028588704, z: 3.787316e-18}
