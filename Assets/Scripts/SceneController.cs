@@ -79,6 +79,8 @@ public class SceneController : MonoBehaviour
         cinemachine.Follow = helicopter.transform;
         cinemachine.LookAt = helicopter.transform;
 
+        //cinemachine.m_Follow.position = new Vector3(0, 10, -20);
+
         unit.GetComponentInChildren<SkinnedMeshRenderer>().enabled = false;
         helicopter.HelicopterFly();
     }
