@@ -1,12 +1,13 @@
 ﻿<Properties StartupConfiguration="{E9603182-87AC-30CB-560C-1F1DC5384AED}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/SceneController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/FinishLoseScreen.cs">
     <Files>
-      <File FileName="Assets/Scripts/SceneController.cs" Line="76" Column="18" />
+      <File FileName="Assets/Scripts/FinishLoseScreen.cs" Line="13" Column="67" />
+      <File FileName="Assets/Scripts/SceneController.cs" Line="82" Column="67" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="8c522729-d44c-4bbe-ae78-fc30e26429ff" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="0c4d3106-83b4-4a67-ad09-7f85f7b53ddd" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

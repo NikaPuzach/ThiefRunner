@@ -170,7 +170,8 @@ public class SceneController : MonoBehaviour
         ScreenManager.HideScreen<GameplayScreen>();
         ScreenManager.HideScreen<FinishLoseScreen>();
 
-        SceneManager.LoadScene(0);
+        var currentScene = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentScene);
     }
 
     public void StartGameplay()
